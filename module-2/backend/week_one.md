@@ -46,10 +46,13 @@ Note: When you're done, submit a PR.
 * ActiveRecord
 16. Let's say we have an application with restaurants. There are seven verb + path combinations necessary to provide full CRUD functionality for our restaurant application. List each of the seven combinations, and explain what each is for.
 17. What's a migration? 
+* 
 18. When you create a migration, does it automatically modify your database?
+* Not unless you run rake db:migrate. 
 19. How does a model relate to a database?
+* They are the empty class used to create objects fromt the rows of the database. Each column will be an attribute for the object.
 20. What is the difference between `#new` and `#create`?
-* Create is #new and #save at the same time, while #new is 
+* Create is #new and #save at the same time, while #new can be an instaniated object that could be empty or other attributes without being saved.
 
 ### Review Questions:  
 21. Given a CSV file (“films.csv”) with these headers [id, title, description], how would you load these into your database to create new instances of Film?
@@ -71,12 +74,18 @@ activities = {
 }
 ```
 How would I add 'granola bar' to things you should have when hiking?
+```ruby
+activities[:hiking][:supplies] << 'granola bar'
+```
 23. What are the 4 Principles of OOP? Give a one sentence explanation of each.
-
+* Inheritance
+* Polymorphism
+* Encapsulation
+* Abstraction
 
 ### Self Assessment:
 Choose One:
-* I was able to answer most questions independently, but utilized outside resources for a few
+* I was able to answer a few questions independently, but relied heavily on outside resources
 
 Choose One:
-* I feel comfortable with the content presented this week
+* I feel overwhelmed by the content presented this week
