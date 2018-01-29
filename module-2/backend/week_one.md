@@ -45,8 +45,15 @@ Note: When you're done, submit a PR.
 15. What's the most commonly used ORM in ruby (Sinatra & Rails)?
 * ActiveRecord
 16. Let's say we have an application with restaurants. There are seven verb + path combinations necessary to provide full CRUD functionality for our restaurant application. List each of the seven combinations, and explain what each is for.
+* get + '/items'
+* get + '/items/new'
+* get + '/items/:id
+* get + '/items/:id/edit'
+* post + '/items'
+* delete + '/items/:id'
+* put + '/items/:id'
 17. What's a migration? 
-* 
+* An easy way to alter the database schema over time.
 18. When you create a migration, does it automatically modify your database?
 * Not unless you run rake db:migrate. 
 19. How does a model relate to a database?
@@ -71,17 +78,17 @@ activities = {
   karaoke: {cost: $10, supplies: ['courage', 'microphone'],
   brunch: {cost: $35, supplies: ['mimosa flutes'],
   antiquing: {cost: $200, supplies: ['list of antique stores'] 
-}
+}}}}
 ```
 How would I add 'granola bar' to things you should have when hiking?
 ```ruby
 activities[:hiking][:supplies] << 'granola bar'
 ```
 23. What are the 4 Principles of OOP? Give a one sentence explanation of each.
-* Inheritance
-* Polymorphism
-* Encapsulation
-* Abstraction
+* Inheritance - The ability of passing behavior an existing class to another class.
+* Polymorphism - Allowing the object or methods within an object to take on many different roles and responsibilities
+* Encapsulation - Binding variables and methods in classes to achieve data integrity and ease of maintenance.
+* Abstraction - It is the process of only showing essential data or necessary features of an object to the outside world.
 
 ### Self Assessment:
 Choose One:
