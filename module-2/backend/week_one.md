@@ -17,6 +17,7 @@ Note: When you're done, submit a PR.
 4. What is MVC?
 * MVC stands for model view controller.
 5. Why do we follow conventions when creating our actions/path names in our Sinatra routes?
+* Following convention will allow for other software developers to easily understand your code, and in regards to Sinatra, we are following the RESTful paradigm.
 6. What types of variables are accessible in our view templates without explicitly passing them?
 * Instance variables
 7. Given the following block of code, how would I pass an instance variable `count` with a value of `1` to my `index.erb` template?
