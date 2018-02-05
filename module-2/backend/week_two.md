@@ -68,7 +68,7 @@ team.owner.name
 * A teacher belongs_to a school and a school has_many teachers
 5. In the same database, what will you need to do to create this relationship (draw a schema diagram)?
 |Teacher  |School |
-|--------:|:-----:|
+| ------- | ----- |
 |name     | name  |
 |id       | id    |
 |school_id|       |
