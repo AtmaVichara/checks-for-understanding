@@ -67,11 +67,11 @@ team.owner.name
 4. In a database that's holding schools and teachers, what will be the relationship between schools and teachers?
 * A teacher belongs_to a school and a school has_many teachers
 5. In the same database, what will you need to do to create this relationship (draw a schema diagram)?
- Teacher  | School
-| ------- | ----- |
-| name    | name  |
-| id      | id    |
-| school_id |       |
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 6. Give an example of when you might want to store information besides ids on a join table.
 7. Describe and diagram the relationship between patients and doctors.
 8. Describe and diagram the relationship between museums and original_paintings.
