@@ -44,6 +44,12 @@ team.owner.name
 
 5. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
 
+students | teachers | student_teachers 
+--- | --- | ---
+id | id | id 
+name | name | student_id
+grade | | teacher_id
+
 6. Define foreign key, primary key, and schema.
 * A forein key is a key to link two tables together. This is usually an id of some sort.
 * A primary key is the unique identifier of a record in a database
