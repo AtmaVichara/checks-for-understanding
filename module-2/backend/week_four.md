@@ -29,7 +29,7 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 * We generally namespace a resource for authorization.
 * We nest resources for communicating relationships, such as a users posts (users/:id/posts)
 10. At a high level, what tools can you use to implement authorization? How would you use them?
-* On a high level, you would use an encryptor for the password and verification fo the password. For rails this would be a simple gem. We also use sessions and verify the session.
+* On a high level, you would use an encryptor for the password and verification fo the password. For rails this would be a simple gem. We also use sessions and enums to verify the roles of the user.
 11. What's an enum, and what advantages does it offer? What data type needs to be in your database to use an enum? Where do you declare an enum?
 * An enum is an activerecord method that takes an attribute and allows it to be set to predefined constants. An integer has to be the datatype used for an enum in our database, because the integer will represent the index of the array of predefined constants. The enum is usually decalred in the model.
 12. What are some strategies you can use to keep your views DRY?
