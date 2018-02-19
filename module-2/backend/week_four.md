@@ -14,6 +14,7 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 2. What’s the difference between a session and a cookie?
 * A session is like a cookie in that it is data stored while a user is sending requests to the server, but unlike a cookie, a session is stored server side.
 3. What’s a flash and when do you want to use flashes?
+* A flash is a special part of the session where data will only be available in the next request. This is useful for handling alerts and messages to the user (logging in, editing, creating, deleting, etc.)
 4. Why do people say “HTTP is stateless”?
 * Even though multiple requests can be processed by a server, the responses have no knowledge of previous responses. They are their own.
 5. What’s authentication? Explain.
