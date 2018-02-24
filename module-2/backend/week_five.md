@@ -30,7 +30,7 @@ Questions from Week 5:
 * A great installation guide. Step by step process with visual examples.
 * A demonstration of functionality. What can you do with it? What visual examples (code snippets) are provided?
 * A great edgecase or misc section. If there is a problem or something that you must do to have the gem working in production and deployment, what necessary steps must be taken?
-* Links to any relevant information. How do you contribute? How do you support the creators?
+* Links to any relevant information. How do you contribute? How do you support the creators? Further documentation.
 * Updating the readme can give other people a better understanding of what the app will do, and will keep people informed on any changes that might occur over the development lifecycle.
 
 8. What are the top four accessibility issues that we as developers should be aware of?
