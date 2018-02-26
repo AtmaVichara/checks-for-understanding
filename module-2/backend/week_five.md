@@ -15,7 +15,7 @@ Questions from Week 5:
 * The asset pipeline allows for our apps to run faster by compressing our asset files, while also processing languages such as erb, coffeescript, sass into html, javascript, and css for us.
 
 5. Why do we precompile our assets?
-*
+* We precompile to minimize the files for the browser to run faster. 
 
 6. What do each of the following tags do?
 
@@ -34,8 +34,12 @@ Questions from Week 5:
 * Updating the readme can give other people a better understanding of what the app will do, and will keep people informed on any changes that might occur over the development lifecycle.
 
 8. What are the top four accessibility issues that we as developers should be aware of?
-
+* visual
+* cognition
+* mobility
+* I don't know the other. Maybe if they are colorblind.
 9. `before_save` is an example of a what? Where in our Rails application would we find a `before_save`?
+* It is known as a call back and is found in our models.
 
 10. Given the following object, how would we create a scope for all users who are active?
 
@@ -65,5 +69,7 @@ Review Questions:
   ```ruby
   sessiont[:cart].values.sum
   ```
-13. What is polymorphism? How does it relate to duck-typing? What are two ways you use this in everyday Rails applications?  
+13. What is polymorphism? How does it relate to duck-typing? What are two ways you use this in everyday Rails applications?
+* Polymorphism is the concept that a model or object can take on multiple functions in an application.
 14. How would you clean the string "(630) 854-5483" to "630.854.5483"?  
+* num.gsub(/[()]/, '').gsub('.', '')
