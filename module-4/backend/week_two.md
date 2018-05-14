@@ -21,24 +21,12 @@ const greetings = (name) => {
 const greedting = (name) => `hello ${name}`;
 ```
 
-* ES6 introduced promises
+* ES6 introduced promises and then
 ```javascript
-const isGreater = (a, b) => {
- return new Promise ((resolve, reject) => {
-  if(a > b) {
-   resolve(true)
-  } else {
-   reject(false)
-  }
- })
-}
-isGreater(1, 2)
- .then(result => {
-    console.log('greater')
- })
- .catch(result => {
-    console.log('smaller')
- })
+fetch('/api/v1/people')
+  .then((people) => people.json())
+  .then((peopleJson) => doSomething(peopleJson))
+  .catch((error) => console.error({error}))
 ```
 
 * ES6 also introduced some changes for populating objects and arrays with spread
