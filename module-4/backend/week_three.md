@@ -37,7 +37,7 @@ app.use('/api/v1/foods', foodsRouter); // specify the root route to be used, and
 * controllers/
   * food-controller.js
 * models
-  food.js
+  * food.js
 * routes/
   * api/
     * v1/
